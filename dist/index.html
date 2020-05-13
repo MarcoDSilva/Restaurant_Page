@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,59 +9,102 @@
 
 <style>
     body {
-        margin:0;
-        padding:0;
-        background-image: url('./img/bg.jpg') ; /*Photo by Jason Leung on Unsplash */
-        background-size: cover;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('./img/bg.jpg');
+        /*Photo by Jason Leung on Unsplash */
+        background-repeat: no-repeat;
+        background-position: center;      
     }
 
-    #content{
-        margin:0 auto;
+    #content {
+        margin: 0 auto;
         text-align: center;
+        background-color: rgba(238, 218, 252, 0.11);
+        height: 100vh;
     }
 
-    #navbar{
-        height:100px;
-        display:flex;
-        justify-content: space-between;
+    #navbar {
+        height: 15vh;
+        background-color: rgba(29, 5, 46, 0.774);
+        display: flex;
         align-items: center;
-        background-color:antiquewhite;
-        border:1px solid black;
     }
 
-    .nav-list{
-        display:flex;
-        justify-content: space-evenly;
+    .nav-list {
+        width: 80%;
+        display: flex;
         list-style: none;
-        padding: 4em;
+        font-size: 1.4em;
+        align-items: center;
+    }
+
+    .nav-link:hover {
+        color: black;
+        background-color: white;
+    }
+
+    .nav-link {
+        padding: 1.3em;
+        color: white;
+    }
+
+    .logo {
+        width: 20%;
+        padding: 2.2em;
+        color: white;
         font-size: 1.4em;
     }
 
-    .nav-link{
-        padding-left:1.4em;
+    .info-container {       
+        color: whitesmoke;
+        margin-top:2em;
     }
 
-    .logo{
-        padding:2.2em;
+    .info {
+        background-color:rgba(202, 159, 235, 0.829);
+        border-radius: 1em;
+        font-size: 1.5em;
+        padding: 1em;
+        color: rgba(28, 49, 78, 0.87);
+        width: 80%;
+        margin:0 auto;
     }
 </style>
 
 <body>
     <div id="content">
         <nav id="navbar">
-            <h2 class="logo">LOGO</h2>
+            <p class="logo">Restaurant Lorem</p>
             <ul class="nav-list">
                 <li><a href="#" class="nav-link">Home</a></li>
                 <li><a href="#" class="nav-link">Menu</a></li>
                 <li><a href="#" class="nav-link">Contact</a></li>
             </ul>
         </nav>
-       <div>
-           text
-       </div>
-       <footer>
-           things here
-       </footer>
+
+        <div class="info-container">
+            <div class="info">
+                <h4>Welcome to Restaurant Lorem</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus, justo eu ultrices mattis,
+                    justo arcu placerat lorem, vitae tempor tortor augue at libero. Sed sollicitudin enim laoreet urna
+                    suscipit fermentum.
+                    Sed odio ex, ornare at condimentum id, interdum id lacus. Quisque non leo nec velit feugiat
+                    sagittis.
+                    Praesent finibus diam ut purus eleifend rhoncus. Quisque pretium ligula in vehicula fringilla.
+                    Fusce porttitor arcu tellus, ut congue eros facilisis quis. Aenean blandit in tortor in congue.
+                    Donec tempus, felis et tempus rhoncus, dolor dolor sagittis sapien, nec lacinia lacus massa id urna.
+                    Nullam tellus orci, imperdiet interdum nunc non, feugiat bibendum nisl. Maecenas nec turpis non
+                    justo auctor malesuada ac ut elit.
+                    Quisque suscipit, libero quis facilisis laoreet, sapien odio commodo mauris, a pellentesque lacus
+                    magna nec nisi.
+                    Donec maximus enim eget iaculis ullamcorper. Pellentesque habitant morbi tristique senectus et netus
+                    et malesuada
+                    fames ac turpis egestas. Integer dictum lorem ut lacus lobortis bibendum. </p>
+            </div>
+
+        </div>
     </div>
 </body>
 <script src="../src/index.js"></script>
