@@ -1,3 +1,5 @@
+import { menu } from './menu.js';
+
 const aboutUs = () => {
 
     //variables to hold all the html
@@ -19,6 +21,9 @@ const aboutUs = () => {
         anchor.innerText = `${menuElements[el]}`;
         anchor.id = `${menuElements[el]}`;
         anchor.classList.add('nav-link');
+        anchor.addEventListener('click', () => {
+            menu();
+        });
         anchor.href = '#';
 
         li.appendChild(anchor);
