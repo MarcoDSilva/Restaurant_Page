@@ -1,7 +1,8 @@
 import { menu, cleanDoc } from './menu.js';
 import { contact, cleanContact } from './contacts.js'
+import { aboutUs, cleanAboutUs } from './about.js';
 
-const aboutUs = () => {
+const navbar = () => {
 
     //variables to hold all the html
     const mainDocument = document.querySelector('#container');
@@ -45,6 +46,7 @@ function getMenuToShow(element) {
     cleaner();
     switch (element) {
         case 'about':
+            aboutUs();
             break;
         case 'menu':
             menu();
@@ -61,6 +63,7 @@ function getMenuToShow(element) {
 const cleaner = () => {
     cleanContact();
     cleanDoc();
+    cleanAboutUs();
 }
 
-export { aboutUs };
+export { navbar };
