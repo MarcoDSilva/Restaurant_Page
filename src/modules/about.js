@@ -12,7 +12,8 @@ const aboutUs = () => {
 
     title.textContent = 'What do we do? ';
 
-    paragraph.textContent = `WE DO X AND Y AND WE LIKE IT`;
+    paragraph.textContent = `Cup, grounds, espresso organic blue mountain, rich flavour, id est wings frappuccino coffee.
+        Decaffeinated froth irish chicory acerbic and espresso variety.`;
 
     information.appendChild(title);
     information.appendChild(paragraph);
