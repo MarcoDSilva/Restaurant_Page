@@ -1,14 +1,15 @@
+const mainDocument = document.querySelector('#container');
+const infoContainer = document.createElement('div');
+
 const menu = () => {
-
-    const mainDocument = document.querySelector('#container');
-
-    const infoContainer = document.createElement('div');
     infoContainer.classList.add('info-container');
 
     const information = document.createElement('div');
     information.classList.add('info');
 
     const title = document.createElement('h4');
+    title.textContent = 'Our menu has'
+
     const paragraph = document.createElement('p');
 
     paragraph.textContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus, justo eu ultrices mattis,
@@ -33,4 +34,9 @@ const menu = () => {
     mainDocument.appendChild(infoContainer);
 };
 
-export { menu };
+const cleanDoc = () => {
+    infoContainer.innerHTML = null;
+    mainDocument.appendChild(infoContainer);
+}
+
+export { menu , cleanDoc };

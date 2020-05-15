@@ -1,4 +1,5 @@
-import { menu } from './menu.js';
+import { menu, cleanDoc } from './menu.js';
+import { contact, cleanContact } from './contacts.js'
 
 const aboutUs = () => {
 
@@ -22,7 +23,8 @@ const aboutUs = () => {
         anchor.id = `${menuElements[el]}`;
         anchor.classList.add('nav-link');
         anchor.addEventListener('click', () => {
-            menu();
+           
+            getMenuToShow(menuElements[el]);
         });
         anchor.href = '#';
 
@@ -37,8 +39,28 @@ const aboutUs = () => {
     navbar.appendChild(list);
 
     mainDocument.appendChild(navbar);
-
-    console.log("hello world")
 };
+
+function getMenuToShow(element) {
+    cleaner();
+    switch (element) {
+        case 'about':
+            break;
+        case 'menu':
+            menu();
+            break;
+        case 'contacts':
+            contact();
+            break;
+        default:
+            break;
+    }
+    return;
+}
+
+const cleaner = () => {
+    cleanContact();
+    cleanDoc();
+}
 
 export { aboutUs };
